@@ -1,0 +1,3 @@
+[submodule "jungle-speed"]
+	path = jungle-speed
+	url = git@gitlab.com:matf-bg-ac-rs/course-rs/projects-2023-2024/jungle-speed.git
