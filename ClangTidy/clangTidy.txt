@@ -1,0 +1,210 @@
+Enabled checks:
+    clang-analyzer-apiModeling.StdCLibraryFunctions
+    clang-analyzer-apiModeling.TrustNonnull
+    clang-analyzer-apiModeling.google.GTest
+    clang-analyzer-apiModeling.llvm.CastValue
+    clang-analyzer-apiModeling.llvm.ReturnValue
+    clang-analyzer-core.CallAndMessage
+    clang-analyzer-core.DivideZero
+    clang-analyzer-core.DynamicTypePropagation
+    clang-analyzer-core.NonNullParamChecker
+    clang-analyzer-core.NonnilStringConstants
+    clang-analyzer-core.NullDereference
+    clang-analyzer-core.StackAddrEscapeBase
+    clang-analyzer-core.StackAddressEscape
+    clang-analyzer-core.UndefinedBinaryOperatorResult
+    clang-analyzer-core.VLASize
+    clang-analyzer-core.builtin.BuiltinFunctions
+    clang-analyzer-core.builtin.NoReturnFunctions
+    clang-analyzer-core.uninitialized.ArraySubscript
+    clang-analyzer-core.uninitialized.Assign
+    clang-analyzer-core.uninitialized.Branch
+    clang-analyzer-core.uninitialized.CapturedBlockVariable
+    clang-analyzer-core.uninitialized.UndefReturn
+    clang-analyzer-cplusplus.InnerPointer
+    clang-analyzer-cplusplus.Move
+    clang-analyzer-cplusplus.NewDelete
+    clang-analyzer-cplusplus.NewDeleteLeaks
+    clang-analyzer-cplusplus.PureVirtualCall
+    clang-analyzer-cplusplus.SelfAssignment
+    clang-analyzer-cplusplus.SmartPtr
+    clang-analyzer-cplusplus.VirtualCallModeling
+    clang-analyzer-deadcode.DeadStores
+    clang-analyzer-fuchsia.HandleChecker
+    clang-analyzer-nullability.NullPassedToNonnull
+    clang-analyzer-nullability.NullReturnedFromNonnull
+    clang-analyzer-nullability.NullabilityBase
+    clang-analyzer-nullability.NullableDereferenced
+    clang-analyzer-nullability.NullablePassedToNonnull
+    clang-analyzer-nullability.NullableReturnedFromNonnull
+    clang-analyzer-optin.cplusplus.UninitializedObject
+    clang-analyzer-optin.cplusplus.VirtualCall
+    clang-analyzer-optin.mpi.MPI-Checker
+    clang-analyzer-optin.osx.OSObjectCStyleCast
+    clang-analyzer-optin.osx.cocoa.localizability.EmptyLocalizationContextChecker
+    clang-analyzer-optin.osx.cocoa.localizability.NonLocalizedStringChecker
+    clang-analyzer-optin.performance.GCDAntipattern
+    clang-analyzer-optin.performance.Padding
+    clang-analyzer-optin.portability.UnixAPI
+    clang-analyzer-osx.API
+    clang-analyzer-osx.MIG
+    clang-analyzer-osx.NSOrCFErrorDerefChecker
+    clang-analyzer-osx.NumberObjectConversion
+    clang-analyzer-osx.OSObjectRetainCount
+    clang-analyzer-osx.ObjCProperty
+    clang-analyzer-osx.SecKeychainAPI
+    clang-analyzer-osx.cocoa.AtSync
+    clang-analyzer-osx.cocoa.AutoreleaseWrite
+    clang-analyzer-osx.cocoa.ClassRelease
+    clang-analyzer-osx.cocoa.Dealloc
+    clang-analyzer-osx.cocoa.IncompatibleMethodTypes
+    clang-analyzer-osx.cocoa.Loops
+    clang-analyzer-osx.cocoa.MissingSuperCall
+    clang-analyzer-osx.cocoa.NSAutoreleasePool
+    clang-analyzer-osx.cocoa.NSError
+    clang-analyzer-osx.cocoa.NilArg
+    clang-analyzer-osx.cocoa.NonNilReturnValue
+    clang-analyzer-osx.cocoa.ObjCGenerics
+    clang-analyzer-osx.cocoa.RetainCount
+    clang-analyzer-osx.cocoa.RetainCountBase
+    clang-analyzer-osx.cocoa.RunLoopAutoreleaseLeak
+    clang-analyzer-osx.cocoa.SelfInit
+    clang-analyzer-osx.cocoa.SuperDealloc
+    clang-analyzer-osx.cocoa.UnusedIvars
+    clang-analyzer-osx.cocoa.VariadicMethodTypes
+    clang-analyzer-osx.coreFoundation.CFError
+    clang-analyzer-osx.coreFoundation.CFNumber
+    clang-analyzer-osx.coreFoundation.CFRetainRelease
+    clang-analyzer-osx.coreFoundation.containers.OutOfBounds
+    clang-analyzer-osx.coreFoundation.containers.PointerSizedValues
+    clang-analyzer-security.FloatLoopCounter
+    clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling
+    clang-analyzer-security.insecureAPI.SecuritySyntaxChecker
+    clang-analyzer-security.insecureAPI.UncheckedReturn
+    clang-analyzer-security.insecureAPI.bcmp
+    clang-analyzer-security.insecureAPI.bcopy
+    clang-analyzer-security.insecureAPI.bzero
+    clang-analyzer-security.insecureAPI.decodeValueOfObjCType
+    clang-analyzer-security.insecureAPI.getpw
+    clang-analyzer-security.insecureAPI.gets
+    clang-analyzer-security.insecureAPI.mkstemp
+    clang-analyzer-security.insecureAPI.mktemp
+    clang-analyzer-security.insecureAPI.rand
+    clang-analyzer-security.insecureAPI.strcpy
+    clang-analyzer-security.insecureAPI.vfork
+    clang-analyzer-unix.API
+    clang-analyzer-unix.DynamicMemoryModeling
+    clang-analyzer-unix.Malloc
+    clang-analyzer-unix.MallocSizeof
+    clang-analyzer-unix.MismatchedDeallocator
+    clang-analyzer-unix.Vfork
+    clang-analyzer-unix.cstring.BadSizeArg
+    clang-analyzer-unix.cstring.CStringModeling
+    clang-analyzer-unix.cstring.NullArg
+    clang-analyzer-valist.CopyToSelf
+    clang-analyzer-valist.Uninitialized
+    clang-analyzer-valist.Unterminated
+    clang-analyzer-valist.ValistBase
+    modernize-loop-convert
+    modernize-use-auto
+    modernize-use-emplace
+    modernize-use-noexcept
+    modernize-use-nullptr
+    modernize-use-using
+
+clang-apply-replacements version 10.0.1
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmp2_62oxqt.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/main.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmpitkzry5o.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/build/jungleSpeed_autogen/mocs_compilation.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmpcif2s_km.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/cards/Card.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmptmgt6cqt.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/cards/RegularCard.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmp8by51lm5.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/cards/SpecialCard.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmp9ff0yj8r.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/client/Client.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmpzpoki6w7.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/gui/game.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmp5no3l3_h.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/gui/facedownpileview.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmpnallf235.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/gui/music.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmpuf1blutm.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/gui/form.cpp
+/home/user/Desktop/jungle-speed/jungleSpeed/src/gui/form.cpp:128:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    QMovie *movie = new QMovie(":/gifs/resources/waiting.gif");
+    ^~~~~~
+    auto
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmp2fl1al03.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/server/server.cpp
+/home/user/Desktop/jungle-speed/jungleSpeed/src/server/server.cpp:24:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    worker* w = new worker(this, ++m_nextId);
+    ^~~~~~
+    auto
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmpz6x5yb_u.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/player/player.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmpcpmpdaka.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/server/worker.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmpkwdxx3ea.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/server/gameserver.cpp
+/home/user/Desktop/jungle-speed/jungleSpeed/src/server/gameserver.cpp:388:13: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+            RegularCard  *card = new RegularCard(color,shape);
+            ^~~~~~~~~~~
+            auto
+/home/user/Desktop/jungle-speed/jungleSpeed/src/server/gameserver.cpp:396:13: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+            SpecialCard *card = new SpecialCard(type);
+            ^~~~~~~~~~~
+            auto
+/home/user/Desktop/jungle-speed/jungleSpeed/src/server/gameserver.cpp:401:13: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+            SpecialCard *card = new SpecialCard(type);
+            ^~~~~~~~~~~
+            auto
+/home/user/Desktop/jungle-speed/jungleSpeed/src/server/gameserver.cpp:404:13: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+            SpecialCard *card = new SpecialCard(type);
+            ^~~~~~~~~~~
+            auto
+/home/user/Desktop/jungle-speed/jungleSpeed/src/server/gameserver.cpp:468:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    Player *player = new Player(username);
+    ^~~~~~
+    auto
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmp0q4ou1pp.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/gui/faceuppileview.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmpx717r09s.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/src/gui/Functions.cpp
+2661 warnings generated.
+Suppressed 2661 warnings (2661 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2660 warnings generated.
+Suppressed 2660 warnings (2660 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+1982 warnings generated.
+Suppressed 1982 warnings (1982 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+1982 warnings generated.
+Suppressed 1982 warnings (1982 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+1982 warnings generated.
+Suppressed 1982 warnings (1982 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2635 warnings generated.
+Suppressed 2635 warnings (2635 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2665 warnings generated.
+Suppressed 2665 warnings (2665 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2541 warnings generated.
+Suppressed 2541 warnings (2541 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2450 warnings generated.
+Suppressed 2450 warnings (2450 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2670 warnings generated.
+Suppressed 2669 warnings (2669 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2758 warnings generated.
+Suppressed 2757 warnings (2757 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2596 warnings generated.
+Suppressed 2596 warnings (2596 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2635 warnings generated.
+Suppressed 2635 warnings (2635 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+4221 warnings generated.
+Suppressed 4216 warnings (4216 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2541 warnings generated.
+Suppressed 2541 warnings (2541 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+2115 warnings generated.
+Suppressed 2115 warnings (2115 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmp3jf725ty.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/build/jungleSpeed_autogen/EWIEGA46WW/qrc_music.cpp
+clang-tidy-10 -header-filter=.* -checks=clang-diagnostic-,clang-analyzer-,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using -export-fixes /tmp/tmpc3va89c4/tmph788sie5.yaml -p=/home/user/Desktop/jungle-speed/jungleSpeed/build /home/user/Desktop/jungle-speed/jungleSpeed/build/jungleSpeed_autogen/EWIEGA46WW/qrc_images.cpp
+Applying fixes ...
